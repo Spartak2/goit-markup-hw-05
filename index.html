@@ -20,34 +20,33 @@
     <!-- HEADER -->
     <header class="page-header">
       <div class="container header-container">
+            <nav class="nav">
+              <a class="logotype" href="./index.html"
+                >web<span class="logo-header">Studio</span>
+              </a>
+              <ul class="menu">
+                <li>
+                  <a class="link-main-page header-list" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li><a class="header-list" href="">Portfolio</a></li>
+                <li><a class="header-list" href="">Contacts</a></li>
+              </ul>
+            </nav>
 
-        <nav class="nav">
-          <a class="logotype" href="./index.html"
-            >web<span class="logo-header">Studio</span>
-          </a>
-          <ul class="menu">
-            <li>
-              <a class="link-main-page header-list" href="./index.html"
-                >Studio</a
-              >
+        <address class="address">
+          <ul class="address-list">
+            <li class="address-list-item">
+              <a class="address-list-item-name" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="header-list" href="">Portfolio</a></li>
-            <li><a class="header-list" href="">Contacts</a></li>
+            <li class="address-list-item">
+              <a class="address-list-item-name" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
           </ul>
-        </nav>
-
-    <address class="address">
-      <ul class="address-list">
-        <li class="address-list-item">
-          <a class="address-list-item-name" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="address-list-item">
-          <a class="address-list-item-name" href="tel:+110001111111">+11 (000) 111-11-11</a>
-        </li>
-      </ul>
-    </address>
-  </div>
-</header>
+        </address>
+      </div>
+    </header>
 
     <main>
 
@@ -473,9 +472,142 @@
               </a>
             </li>
           </ul>
-        </div>
+      </div>
+
+      <!-- /* sub-container */ -->
+      <div class="sub-container">
+        <p class="footer-sub-name">Subscribe</p>
+        <form class="sub-form">
+          <label for="sub-email-btn" class="sub-label">
+            <input
+              type="email"
+              class="sub-email"
+              name="sub-email-btn"
+              placeholder="E-mail"
+              id="sub-email-btn"
+            />
+          </label>
+          <button type="submit" class="sub-btn">
+            Subscribe
+            <svg class="sub-btn-img" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+
+    <!-- /* backdrop-modal */ -->
+    <div class="background">
+      <div class="modal">
+        <form action="">
+          <button class="modal-close-button" type="button">
+            <svg class="modal-close-button-icon"
+            width="8px" height="8px"
+            aria-label="modal close button">
+              <use href="./images/icons.svg#icon-close"./><use/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <!-- menu-gontacts-glav -->
+
+
+
+    <!-- menu-gontacts-glav -->
+    <!-- <div class="backdrop is-open">
+      <div class="modal">
+        <button type="button" class="modal-btn">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-lable">Name</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                required
+                id="user-name"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-phone" class="modal-lable">Phone</label>
+            <div class="modal-input-wrap">
+              <input
+                type="tel"
+                name="user-phone"
+                class="modal-input"
+                required
+                id="user-phone"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-lable">Email</label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                required
+                id="user-email"
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field-comment">
+            <label for="user-comment" class="modal-lable">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-text"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="modal-field-cbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              class="check-input visually-hidden"
+              required
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy" class="check-text">
+              <span class="policy-text"
+                ><svg class="property-v-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Property-1click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="pp-text" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button type="button" class="backdrop-sup-btn">Send</button>
+        </form>
+      </div>
+    </div> -->
+
+
   </body>
 
 </html>
