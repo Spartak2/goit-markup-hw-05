@@ -1049,7 +1049,7 @@ img {
 
 /* backdrop-modal */
 
-.background {
+.backdround {
   position: fixed;
   top: 0;
   left: 0;
@@ -1057,6 +1057,16 @@ img {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 9999999999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdround.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -1095,4 +1105,13 @@ img {
   fill: #FFFFFF;
 }
 
+.backdround-p-title  {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+}
 /* backdrop-modal */

@@ -498,9 +498,8 @@
     </footer>
 
     <!-- /* backdrop-modal */ -->
-    <div class="background">
+    <div class="backdround is-open">
       <div class="modal">
-        <form action="">
           <button class="modal-close-button" type="button">
             <svg class="modal-close-button-icon"
             width="8px" height="8px"
@@ -508,7 +507,69 @@
               <use href="./images/icons.svg#icon-close"./><use/>
             </svg>
           </button>
-        </form>
+          <p class="backdround-p-title">Leave your contacts and we will call you back</p>
+          <form class="reviwe-form">
+            <div class="reviwe-form-field-wapper">
+              <label class="reviwe-form-field-label" for="user-first-name">
+                Name
+              </label>
+              <input class="reviwe-form-field"
+                type="text"
+                name="user_first_name"
+                id="user-first-name"
+                required
+                pattern="[a-zA-zа-я-А-ЯіІїЇєЄґҐ']+"
+                title="Spartak"
+              />
+            </div>
+            <div class="reviwe-form-field-wapper">
+              <label class="reviwe-form-field-label" for="user-email" >
+                Email
+              </label>
+                <input type="email"
+                class="reviwe-form-field"
+                name="user_first_email"
+                id="user-email"
+                required
+              />
+            </div>
+            <div class="reviwe-form-field-wapper">
+              <label class="reviwe-form-field-label" for="user-phone" >
+                Phone
+              </label>
+                <input class="reviwe-form-field"
+                type="tel"
+                name="user_phone_number"
+                id="user-phone"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+            <div class="reviwe-form-field-wapper">
+              <label class="reviwe-form-field-label" for="user-comment">
+                Comment
+              </label>
+              <textarea
+                class="reviwe-form-message"
+                name="user_comment"
+                id="user-comment"
+                placeholder="Enter text">Text input
+              </textarea>
+            </div>
+            <div class="reviwe-form-field-checkbox-wapper">
+              <input class="reviwe-form-checkbox"
+               type="checkbox" name="checkbox_policy"
+               id="checkbox-policy"
+               required
+              value="true"
+               />
+              <label class="reviwe-form-checkbox-label" for="checkbox-policy">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="">Privacy Policy</a>
+              </label>
+            </div>
+            <button class="reviwe-form-btn" type="submit">Send</button>
+          </form>
       </div>
     </div>
 
