@@ -823,8 +823,8 @@ img {
   border: none;
 }
 
-.modal-btn:hover .modal-btn-icon,
-.modal-btn:focus .modal-btn-icon {
+.modal-button:hover .modal-button-icon,
+.modal-button:focus .modal-button-icon {
   fill: #ffffff;
 }
 
