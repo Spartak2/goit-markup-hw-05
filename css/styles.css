@@ -756,16 +756,16 @@ img {
 
 .backdround {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
-  z-index: 9999999999;
+  top: 0;
+  left: 0;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -839,7 +839,6 @@ img {
 
 .reviwe-form-field-wapper {
   margin-bottom: 8px;
-  margin-bottom: 16px
 }
 
 .reviwe-form-field-label {
@@ -883,7 +882,6 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: stroke 300ms linear;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -940,11 +938,9 @@ img {
 
 
 .reviwe-form-checkbox-label {
-  color: #8E8F99;
+  color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0.04em;
 }
 
