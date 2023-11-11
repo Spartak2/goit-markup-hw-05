@@ -510,7 +510,7 @@
           <p class="backdround-p-title">Leave your contacts and we will call you back</p>
           <form class="reviwe-form">
             <div class="reviwe-form-field-wapper">
-              <label class="reviwe-form-field-label" for="user-name">
+              <label class="reviwe-form-field-label" for="user-name" name="user-name" >
                 Name
               </label>
               <div class="reviwe-form-input-wapper">
@@ -562,7 +562,10 @@
               </div>
             </div>
             <div class="reviwe-form-field-wapper">
-              <label class="reviwe-form-field-label" for="user-comment">
+              <label class="reviwe-form-field-label"
+               for="user-comment"
+               name="user-comment"
+               placeholder="Text input" >
                 Comment
               </label>
               <textarea
@@ -573,12 +576,12 @@
             </div>
             <div class="reviwe-form-field-checkbox-wapper">
               <input class="reviwe-form-checkbox visually-hidden"
-                type="checkbox" name="checkbox_policy"
-                id="user-policy"
+                type="checkbox" name="user-privacy"
+                id="user-privacy"
                 required
                 value="true"
               />
-              <label class="reviwe-form-checkbox-label" for="user-policy">
+              <label class="reviwe-form-checkbox-label" for="user-privacy">
                 <span class="reviwe-form-own-checkbox">
                   <svg
                    class="reviwe-form-own-checkbox-icon"

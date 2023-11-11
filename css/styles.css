@@ -841,6 +841,7 @@ img {
 
 .reviwe-form-field-wapper {
   margin-bottom: 8px;
+  margin-bottom: 16px
 }
 
 .reviwe-form-field-label {
@@ -899,6 +900,11 @@ img {
   resize: none;
   font-size: 12px;
   font-weight: 400;
+  line-height: 1.17;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 14px;
   letter-spacing: 0.04em;
   text-align: left;
@@ -906,7 +912,7 @@ img {
 }
 
 .reviwe-form-message:focus {
-  border-color: #404BBF;
+  border-color: #4D5AE5;
   outline-color: transparent;
   outline-offset: 4px;
   transition: border-color 250ms linear;
@@ -926,11 +932,16 @@ img {
   border-radius: 2px;
   cursor: pointer;
   fill: transparent;
+  transition: background-color
+  250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 .reviwe-form-checkbox-label {
+  color: #8E8F99;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -958,7 +969,7 @@ img {
 .reviwe-form-own-checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
-  border: 1px solid #404bbf
+  border: none;
 }
 
 .reviwe-form-checkbox:focus +
@@ -968,12 +979,16 @@ img {
 }
 
 .reviwe-form-btn{
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
   gap: 10px;
   background-color: #4d5ae5;
   color: #ffffff;
