@@ -510,13 +510,13 @@
           <p class="backdround-p-title">Leave your contacts and we will call you back</p>
           <form class="reviwe-form">
             <div class="reviwe-form-field-wapper">
-              <label class="reviwe-form-field-label" for="user-name" name="user-name" >
+              <label class="reviwe-form-field-label" for="user-name" name="user-name">
                 Name
               </label>
               <div class="reviwe-form-input-wapper">
                 <input class="reviwe-form-field"
                   type="text"
-                  name="user_first_name"
+                  name="user-name"
                   id="user-name"
                   required
                   pattern="[a-zA-zа-я-А-ЯіІїЇєЄґҐ']+"
@@ -569,8 +569,9 @@
                 Comment
               </label>
               <textarea
+                name="user-comment"
+                placeholder="Text input"
                 class="reviwe-form-message"
-                name="user_comment"
                 id="user-comment"
                 placeholder="Enter text">Text input</textarea>
             </div>
